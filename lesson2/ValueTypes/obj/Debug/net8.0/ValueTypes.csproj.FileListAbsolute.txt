@@ -1,0 +1,14 @@
+C:\Users\Jacob Baggs\Documents\LearnCSharp\lesson2\ValueTypes\obj\Debug\net8.0\ValueTypes.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Jacob Baggs\Documents\LearnCSharp\lesson2\ValueTypes\obj\Debug\net8.0\ValueTypes.AssemblyInfoInputs.cache
+C:\Users\Jacob Baggs\Documents\LearnCSharp\lesson2\ValueTypes\obj\Debug\net8.0\ValueTypes.AssemblyInfo.cs
+C:\Users\Jacob Baggs\Documents\LearnCSharp\lesson2\ValueTypes\obj\Debug\net8.0\ValueTypes.csproj.CoreCompileInputs.cache
+C:\Users\Jacob Baggs\Documents\LearnCSharp\lesson2\ValueTypes\bin\Debug\net8.0\ValueTypes.exe
+C:\Users\Jacob Baggs\Documents\LearnCSharp\lesson2\ValueTypes\bin\Debug\net8.0\ValueTypes.deps.json
+C:\Users\Jacob Baggs\Documents\LearnCSharp\lesson2\ValueTypes\bin\Debug\net8.0\ValueTypes.runtimeconfig.json
+C:\Users\Jacob Baggs\Documents\LearnCSharp\lesson2\ValueTypes\bin\Debug\net8.0\ValueTypes.dll
+C:\Users\Jacob Baggs\Documents\LearnCSharp\lesson2\ValueTypes\bin\Debug\net8.0\ValueTypes.pdb
+C:\Users\Jacob Baggs\Documents\LearnCSharp\lesson2\ValueTypes\obj\Debug\net8.0\ValueTypes.dll
+C:\Users\Jacob Baggs\Documents\LearnCSharp\lesson2\ValueTypes\obj\Debug\net8.0\refint\ValueTypes.dll
+C:\Users\Jacob Baggs\Documents\LearnCSharp\lesson2\ValueTypes\obj\Debug\net8.0\ValueTypes.pdb
+C:\Users\Jacob Baggs\Documents\LearnCSharp\lesson2\ValueTypes\obj\Debug\net8.0\ValueTypes.genruntimeconfig.cache
+C:\Users\Jacob Baggs\Documents\LearnCSharp\lesson2\ValueTypes\obj\Debug\net8.0\ref\ValueTypes.dll

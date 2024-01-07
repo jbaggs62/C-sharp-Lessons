@@ -1,0 +1,14 @@
+C:\Users\Jacob Baggs\Documents\LearnCSharp\lesson1\ProgramArmsExplicit\obj\Debug\net8.0\ProgramArmsExplicit.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Jacob Baggs\Documents\LearnCSharp\lesson1\ProgramArmsExplicit\obj\Debug\net8.0\ProgramArmsExplicit.AssemblyInfoInputs.cache
+C:\Users\Jacob Baggs\Documents\LearnCSharp\lesson1\ProgramArmsExplicit\obj\Debug\net8.0\ProgramArmsExplicit.AssemblyInfo.cs
+C:\Users\Jacob Baggs\Documents\LearnCSharp\lesson1\ProgramArmsExplicit\obj\Debug\net8.0\ProgramArmsExplicit.csproj.CoreCompileInputs.cache
+C:\Users\Jacob Baggs\Documents\LearnCSharp\lesson1\ProgramArmsExplicit\bin\Debug\net8.0\ProgramArmsExplicit.exe
+C:\Users\Jacob Baggs\Documents\LearnCSharp\lesson1\ProgramArmsExplicit\bin\Debug\net8.0\ProgramArmsExplicit.deps.json
+C:\Users\Jacob Baggs\Documents\LearnCSharp\lesson1\ProgramArmsExplicit\bin\Debug\net8.0\ProgramArmsExplicit.runtimeconfig.json
+C:\Users\Jacob Baggs\Documents\LearnCSharp\lesson1\ProgramArmsExplicit\bin\Debug\net8.0\ProgramArmsExplicit.dll
+C:\Users\Jacob Baggs\Documents\LearnCSharp\lesson1\ProgramArmsExplicit\bin\Debug\net8.0\ProgramArmsExplicit.pdb
+C:\Users\Jacob Baggs\Documents\LearnCSharp\lesson1\ProgramArmsExplicit\obj\Debug\net8.0\ProgramArmsExplicit.dll
+C:\Users\Jacob Baggs\Documents\LearnCSharp\lesson1\ProgramArmsExplicit\obj\Debug\net8.0\refint\ProgramArmsExplicit.dll
+C:\Users\Jacob Baggs\Documents\LearnCSharp\lesson1\ProgramArmsExplicit\obj\Debug\net8.0\ProgramArmsExplicit.pdb
+C:\Users\Jacob Baggs\Documents\LearnCSharp\lesson1\ProgramArmsExplicit\obj\Debug\net8.0\ProgramArmsExplicit.genruntimeconfig.cache
+C:\Users\Jacob Baggs\Documents\LearnCSharp\lesson1\ProgramArmsExplicit\obj\Debug\net8.0\ref\ProgramArmsExplicit.dll

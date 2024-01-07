@@ -1,0 +1,14 @@
+C:\Users\Jacob Baggs\Documents\LearnCSharp\lesson1\HelloDotNetExplicit\bin\Debug\net8.0\HelloDotNetExplicit.exe
+C:\Users\Jacob Baggs\Documents\LearnCSharp\lesson1\HelloDotNetExplicit\bin\Debug\net8.0\HelloDotNetExplicit.deps.json
+C:\Users\Jacob Baggs\Documents\LearnCSharp\lesson1\HelloDotNetExplicit\bin\Debug\net8.0\HelloDotNetExplicit.runtimeconfig.json
+C:\Users\Jacob Baggs\Documents\LearnCSharp\lesson1\HelloDotNetExplicit\bin\Debug\net8.0\HelloDotNetExplicit.dll
+C:\Users\Jacob Baggs\Documents\LearnCSharp\lesson1\HelloDotNetExplicit\bin\Debug\net8.0\HelloDotNetExplicit.pdb
+C:\Users\Jacob Baggs\Documents\LearnCSharp\lesson1\HelloDotNetExplicit\obj\Debug\net8.0\HelloDotNetExplicit.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Jacob Baggs\Documents\LearnCSharp\lesson1\HelloDotNetExplicit\obj\Debug\net8.0\HelloDotNetExplicit.AssemblyInfoInputs.cache
+C:\Users\Jacob Baggs\Documents\LearnCSharp\lesson1\HelloDotNetExplicit\obj\Debug\net8.0\HelloDotNetExplicit.AssemblyInfo.cs
+C:\Users\Jacob Baggs\Documents\LearnCSharp\lesson1\HelloDotNetExplicit\obj\Debug\net8.0\HelloDotNetExplicit.csproj.CoreCompileInputs.cache
+C:\Users\Jacob Baggs\Documents\LearnCSharp\lesson1\HelloDotNetExplicit\obj\Debug\net8.0\HelloDotNetExplicit.dll
+C:\Users\Jacob Baggs\Documents\LearnCSharp\lesson1\HelloDotNetExplicit\obj\Debug\net8.0\refint\HelloDotNetExplicit.dll
+C:\Users\Jacob Baggs\Documents\LearnCSharp\lesson1\HelloDotNetExplicit\obj\Debug\net8.0\HelloDotNetExplicit.pdb
+C:\Users\Jacob Baggs\Documents\LearnCSharp\lesson1\HelloDotNetExplicit\obj\Debug\net8.0\HelloDotNetExplicit.genruntimeconfig.cache
+C:\Users\Jacob Baggs\Documents\LearnCSharp\lesson1\HelloDotNetExplicit\obj\Debug\net8.0\ref\HelloDotNetExplicit.dll

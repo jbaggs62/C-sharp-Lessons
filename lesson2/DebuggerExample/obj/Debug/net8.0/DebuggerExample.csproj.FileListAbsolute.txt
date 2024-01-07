@@ -1,0 +1,14 @@
+C:\Users\Jacob Baggs\Documents\LearnCSharp\lesson2\DebuggerExample\bin\Debug\net8.0\DebuggerExample.exe
+C:\Users\Jacob Baggs\Documents\LearnCSharp\lesson2\DebuggerExample\bin\Debug\net8.0\DebuggerExample.deps.json
+C:\Users\Jacob Baggs\Documents\LearnCSharp\lesson2\DebuggerExample\bin\Debug\net8.0\DebuggerExample.runtimeconfig.json
+C:\Users\Jacob Baggs\Documents\LearnCSharp\lesson2\DebuggerExample\bin\Debug\net8.0\DebuggerExample.dll
+C:\Users\Jacob Baggs\Documents\LearnCSharp\lesson2\DebuggerExample\bin\Debug\net8.0\DebuggerExample.pdb
+C:\Users\Jacob Baggs\Documents\LearnCSharp\lesson2\DebuggerExample\obj\Debug\net8.0\DebuggerExample.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Jacob Baggs\Documents\LearnCSharp\lesson2\DebuggerExample\obj\Debug\net8.0\DebuggerExample.AssemblyInfoInputs.cache
+C:\Users\Jacob Baggs\Documents\LearnCSharp\lesson2\DebuggerExample\obj\Debug\net8.0\DebuggerExample.AssemblyInfo.cs
+C:\Users\Jacob Baggs\Documents\LearnCSharp\lesson2\DebuggerExample\obj\Debug\net8.0\DebuggerExample.csproj.CoreCompileInputs.cache
+C:\Users\Jacob Baggs\Documents\LearnCSharp\lesson2\DebuggerExample\obj\Debug\net8.0\DebuggerExample.dll
+C:\Users\Jacob Baggs\Documents\LearnCSharp\lesson2\DebuggerExample\obj\Debug\net8.0\refint\DebuggerExample.dll
+C:\Users\Jacob Baggs\Documents\LearnCSharp\lesson2\DebuggerExample\obj\Debug\net8.0\DebuggerExample.pdb
+C:\Users\Jacob Baggs\Documents\LearnCSharp\lesson2\DebuggerExample\obj\Debug\net8.0\DebuggerExample.genruntimeconfig.cache
+C:\Users\Jacob Baggs\Documents\LearnCSharp\lesson2\DebuggerExample\obj\Debug\net8.0\ref\DebuggerExample.dll
