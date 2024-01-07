@@ -53,7 +53,7 @@
     ```bash  
     mkdir HelloWorldExplicit
     cd HelloWorldExplicit
-    dotnet new console --use main-program
+    dotnet new console --use-program-main
     ```
     
     ```C# 
