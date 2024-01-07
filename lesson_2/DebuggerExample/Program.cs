@@ -8,7 +8,7 @@ namespace DebuggingExample
         {
             Console.WriteLine("Enter a number to calculate its factorial:");
             int number = int.Parse(Console.ReadLine());
-
+            int factorial = CalculateFactorial(number);
             Console.WriteLine($"The factorial of {number} is {factorial}");
             Console.ReadLine();
         }
