@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>lessonPlan1.md</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+
+<style>
+/* https://github.com/microsoft/vscode/blob/master/extensions/markdown-language-features/media/markdown.css */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+body {
+	font-family: var(--vscode-markdown-font-family, -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif);
+	font-size: var(--vscode-markdown-font-size, 14px);
+	padding: 0 26px;
+	line-height: var(--vscode-markdown-line-height, 22px);
+	word-wrap: break-word;
+}
+
+#code-csp-warning {
+	position: fixed;
+	top: 0;
+	right: 0;
+	color: white;
+	margin: 16px;
+	text-align: center;
+	font-size: 12px;
+	font-family: sans-serif;
+	background-color:#444444;
+	cursor: pointer;
+	padding: 6px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
+}
+
+#code-csp-warning:hover {
+	text-decoration: none;
+	background-color:#007acc;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+}
+
+body.scrollBeyondLastLine {
+	margin-bottom: calc(100vh - 22px);
+}
+
+body.showEditorSelection .code-line {
+	position: relative;
+}
+
+body.showEditorSelection .code-active-line:before,
+body.showEditorSelection .code-line:hover:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -12px;
+	height: 100%;
+}
+
+body.showEditorSelection li.code-active-line:before,
+body.showEditorSelection li.code-line:hover:before {
+	left: -30px;
+}
+
+.vscode-light.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.15);
+}
+
+.vscode-light.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.40);
+}
+
+.vscode-light.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-dark.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+.vscode-dark.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.60);
+}
+
+.vscode-dark.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-high-contrast.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 160, 0, 0.7);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 160, 0, 1);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+	outline: 1px solid -webkit-focus-ring-color;
+	outline-offset: -1px;
+}
+
+hr {
+	border: 0;
+	height: 2px;
+	border-bottom: 2px solid;
+}
+
+h1 {
+	padding-bottom: 0.3em;
+	line-height: 1.2;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table > thead > tr > th {
+	text-align: left;
+	border-bottom: 1px solid;
+}
+
+table > thead > tr > th,
+table > thead > tr > td,
+table > tbody > tr > th,
+table > tbody > tr > td {
+	padding: 5px 10px;
+}
+
+table > tbody > tr + tr > td {
+	border-top: 1px solid;
+}
+
+blockquote {
+	margin: 0 7px 0 5px;
+	padding: 0 16px 0 10px;
+	border-left-width: 5px;
+	border-left-style: solid;
+}
+
+code {
+	font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
+	font-size: 1em;
+	line-height: 1.357em;
+}
+
+body.wordWrap pre {
+	white-space: pre-wrap;
+}
+
+pre:not(.hljs),
+pre.hljs code > div {
+	padding: 16px;
+	border-radius: 3px;
+	overflow: auto;
+}
+
+pre code {
+	color: var(--vscode-editor-foreground);
+	tab-size: 4;
+}
+
+/** Theming */
+
+.vscode-light pre {
+	background-color: rgba(220, 220, 220, 0.4);
+}
+
+.vscode-dark pre {
+	background-color: rgba(10, 10, 10, 0.4);
+}
+
+.vscode-high-contrast pre {
+	background-color: rgb(0, 0, 0);
+}
+
+.vscode-high-contrast h1 {
+	border-color: rgb(0, 0, 0);
+}
+
+.vscode-light table > thead > tr > th {
+	border-color: rgba(0, 0, 0, 0.69);
+}
+
+.vscode-dark table > thead > tr > th {
+	border-color: rgba(255, 255, 255, 0.69);
+}
+
+.vscode-light h1,
+.vscode-light hr,
+.vscode-light table > tbody > tr + tr > td {
+	border-color: rgba(0, 0, 0, 0.18);
+}
+
+.vscode-dark h1,
+.vscode-dark hr,
+.vscode-dark table > tbody > tr + tr > td {
+	border-color: rgba(255, 255, 255, 0.18);
+}
+
+</style>
+
+<style>
+/* Tomorrow Theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+/* Tomorrow Comment */
+.hljs-comment,
+.hljs-quote {
+	color: #8e908c;
+}
+
+/* Tomorrow Red */
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-regexp,
+.hljs-deletion {
+	color: #c82829;
+}
+
+/* Tomorrow Orange */
+.hljs-number,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-params,
+.hljs-meta,
+.hljs-link {
+	color: #f5871f;
+}
+
+/* Tomorrow Yellow */
+.hljs-attribute {
+	color: #eab700;
+}
+
+/* Tomorrow Green */
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+	color: #718c00;
+}
+
+/* Tomorrow Blue */
+.hljs-title,
+.hljs-section {
+	color: #4271ae;
+}
+
+/* Tomorrow Purple */
+.hljs-keyword,
+.hljs-selector-tag {
+	color: #8959a8;
+}
+
+.hljs {
+	display: block;
+	overflow-x: auto;
+	color: #4d4d4c;
+	padding: 0.5em;
+}
+
+.hljs-emphasis {
+	font-style: italic;
+}
+
+.hljs-strong {
+	font-weight: bold;
+}
+</style>
+
+<style>
+/*
+ * Markdown PDF CSS
+ */
+
+ body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif, "Meiryo";
+	padding: 0 12px;
+}
+
+pre {
+	background-color: #f8f8f8;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	overflow-x: auto;
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+}
+
+pre:not(.hljs) {
+	padding: 23px;
+	line-height: 19px;
+}
+
+blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.emoji {
+	height: 1.4em;
+}
+
+code {
+	font-size: 14px;
+	line-height: 19px;
+}
+
+/* for inline code */
+:not(pre):not(.hljs) > code {
+	color: #C9AE75; /* Change the old color so it seems less like an error */
+	font-size: inherit;
+}
+
+/* Page Break : use <div class="page"/> to insert page break
+-------------------------------------------------------- */
+.page {
+	page-break-after: always;
+}
+
+</style>
+
+<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+</head>
+<body>
+  <script>
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: document.body.classList.contains('vscode-dark') || document.body.classList.contains('vscode-high-contrast')
+          ? 'dark'
+          : 'default'
+    });
+  </script>
+<h3 id="verify-people-have-everything-setup">Verify people have everything setup</h3>
+<ol>
+<li>
+<p>Visual Studio Code</p>
+</li>
+<li>
+<p>c# extensions</p>
+</li>
+<li>
+<p>dontnet sdks and runtime<br>
+<code> dotnet --list-sdks</code><br>
+<code> dotnet --list-runtimes</code></p>
+</li>
+<li>
+<p>Git bash
+https://git-scm.com/downloads</p>
+</li>
+<li>
+<p>Change vscode to use gitbash
+<code>ctrl + ` </code><br>
+<code>ctrl + shift + p</code>
+<code>select gitbash</code></p>
+</li>
+<li>
+<p>Open new folder in vscode</p>
+</li>
+<li>
+<p>Instal Roslynator via vs code extension</p>
+</li>
+<li>
+<p>Show themes</p>
+</li>
+</ol>
+<h2 id="boring-lecture-part">Boring Lecture Part</h2>
+<ul>
+<li>What is .dotnet
+<ul>
+<li>a framework designed by microsoft</li>
+<li>crossplatform</li>
+<li>built in libraries</li>
+<li>General purpose langauge</li>
+<li>statically typed
+<ul>
+<li>In a statically typed language, data types are defined during compile time and cannot change during runtime</li>
+</ul>
+</li>
+<li>compiled
+<ul>
+<li><img src="image.png" alt="Alt text"></li>
+</ul>
+</li>
+<li>interpted
+<ul>
+<li><img src="image-1.png" alt="Alt text"></li>
+<li>source https://www.geeksforgeeks.org/difference-between-compiled-and-interpreted-language/</li>
+</ul>
+</li>
+<li>What can you build using .dotnet
+<ul>
+<li>Console app - terminal apps</li>
+<li>Web Apps
+<ul>
+<li>we will learn blazor</li>
+</ul>
+</li>
+<li>Desktop Apps</li>
+<li>Video Games</li>
+</ul>
+</li>
+<li>DotNet Documentation
+<ul>
+<li>https://learn.microsoft.com/en-us/dotnet/</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="programming">Programming</h2>
+<ol>
+<li>
+<p>create first program</p>
+<pre class="hljs"><code><div>mkdir HelloWorld
+<span class="hljs-built_in">cd</span> HelloWorld
+dotnet new console
+</div></code></pre>
+<p>This uses dotnet templates there are many. Can find list on google or by using the command line tool
+<code> dotnet new list</code>
+https://learn.microsoft.com/en-us/dotnet/core/tools/dotnet-new-sdk-templates</p>
+</li>
+<li>
+<p>Create first program using explicits</p>
+<pre class="hljs"><code><div>mkdir HelloWorldExplicit
+<span class="hljs-built_in">cd</span> HelloWorldExplicit
+dotnet new console --use main-program
+</div></code></pre>
+<pre class="hljs"><code><div><span class="hljs-keyword">namespace</span> <span class="hljs-title">HelloDotNetExplicit</span>;
+
+<span class="hljs-keyword">class</span> <span class="hljs-title">Program</span>
+{
+    <span class="hljs-function"><span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">Main</span>(<span class="hljs-params"><span class="hljs-keyword">string</span>[] args</span>)</span>
+    {
+        Console.WriteLine(<span class="hljs-string">"Hello, World!"</span>);
+    }
+}
+</div></code></pre>
+<ul>
+<li>Namespace - name of project</li>
+<li>internal - access modifier</li>
+<li>class - wrap content with curly braceout</li>
+<li>program class</li>
+<li>void - doesn't return a value</li>
+<li>Console is a method</li>
+</ul>
+</li>
+<li>
+<p>Program Arguments</p>
+<pre class="hljs"><code><div>mkdir ProgramArgsExplicit
+<span class="hljs-built_in">cd</span> ProgramArgsExplicit
+dotnet new console --use main-program
+</div></code></pre>
+<ul>
+<li>you can pass in arguments into a function like so</li>
+</ul>
+<pre class="hljs"><code><div>    <span class="hljs-keyword">namespace</span> <span class="hljs-title">ProgramArmsExplicit</span>
+    {
+        <span class="hljs-keyword">internal</span> <span class="hljs-keyword">class</span> <span class="hljs-title">Program</span>
+        {
+            <span class="hljs-function"><span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">Main</span>(<span class="hljs-params"><span class="hljs-keyword">string</span>[] args</span>)</span>
+            {
+                Console.WriteLine(args[<span class="hljs-number">0</span>]);
+            }
+        }
+}
+
+</div></code></pre>
+<ul>
+<li><code> dotnet run jake</code> in your console</li>
+<li>output should look like this</li>
+</ul>
+<pre class="hljs"><code><div>Jacob Baggs@DESKTOP-BBD74IS MINGW64 ~/Documents/LearnCSharp/lesson1/ProgramArmsExplicit
+$ dotnet run jake
+jake
+</div></code></pre>
+<ul>
+<li>Program Arms nonexplicit</li>
+</ul>
+<pre class="hljs"><code><div>mkdir ProgramArgs
+<span class="hljs-built_in">cd</span> ProgramArgs
+dotnet new console
+</div></code></pre>
+<pre class="hljs"><code><div>Console.WriteLine(args[<span class="hljs-number">0</span>]);
+
+</div></code></pre>
+<pre class="hljs"><code><div>Jacob Baggs@DESKTOP-BBD74IS MINGW64 ~/Documents/LearnCSharp/lesson1/ProgramArgs
+$ dotnet run jake
+jake
+</div></code></pre>
+</li>
+<li>
+<p><a href="https://zerotomastery.io/cheatsheets/csharp-cheat-sheet/">CheatSheet</a></p>
+</li>
+</ol>
+
+</body>
+</html>

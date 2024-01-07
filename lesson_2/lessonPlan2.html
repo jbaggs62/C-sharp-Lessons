@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>lessonPlan2.md</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+
+<style>
+/* https://github.com/microsoft/vscode/blob/master/extensions/markdown-language-features/media/markdown.css */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+body {
+	font-family: var(--vscode-markdown-font-family, -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif);
+	font-size: var(--vscode-markdown-font-size, 14px);
+	padding: 0 26px;
+	line-height: var(--vscode-markdown-line-height, 22px);
+	word-wrap: break-word;
+}
+
+#code-csp-warning {
+	position: fixed;
+	top: 0;
+	right: 0;
+	color: white;
+	margin: 16px;
+	text-align: center;
+	font-size: 12px;
+	font-family: sans-serif;
+	background-color:#444444;
+	cursor: pointer;
+	padding: 6px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
+}
+
+#code-csp-warning:hover {
+	text-decoration: none;
+	background-color:#007acc;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+}
+
+body.scrollBeyondLastLine {
+	margin-bottom: calc(100vh - 22px);
+}
+
+body.showEditorSelection .code-line {
+	position: relative;
+}
+
+body.showEditorSelection .code-active-line:before,
+body.showEditorSelection .code-line:hover:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -12px;
+	height: 100%;
+}
+
+body.showEditorSelection li.code-active-line:before,
+body.showEditorSelection li.code-line:hover:before {
+	left: -30px;
+}
+
+.vscode-light.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.15);
+}
+
+.vscode-light.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.40);
+}
+
+.vscode-light.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-dark.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+.vscode-dark.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.60);
+}
+
+.vscode-dark.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-high-contrast.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 160, 0, 0.7);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 160, 0, 1);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+	outline: 1px solid -webkit-focus-ring-color;
+	outline-offset: -1px;
+}
+
+hr {
+	border: 0;
+	height: 2px;
+	border-bottom: 2px solid;
+}
+
+h1 {
+	padding-bottom: 0.3em;
+	line-height: 1.2;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table > thead > tr > th {
+	text-align: left;
+	border-bottom: 1px solid;
+}
+
+table > thead > tr > th,
+table > thead > tr > td,
+table > tbody > tr > th,
+table > tbody > tr > td {
+	padding: 5px 10px;
+}
+
+table > tbody > tr + tr > td {
+	border-top: 1px solid;
+}
+
+blockquote {
+	margin: 0 7px 0 5px;
+	padding: 0 16px 0 10px;
+	border-left-width: 5px;
+	border-left-style: solid;
+}
+
+code {
+	font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
+	font-size: 1em;
+	line-height: 1.357em;
+}
+
+body.wordWrap pre {
+	white-space: pre-wrap;
+}
+
+pre:not(.hljs),
+pre.hljs code > div {
+	padding: 16px;
+	border-radius: 3px;
+	overflow: auto;
+}
+
+pre code {
+	color: var(--vscode-editor-foreground);
+	tab-size: 4;
+}
+
+/** Theming */
+
+.vscode-light pre {
+	background-color: rgba(220, 220, 220, 0.4);
+}
+
+.vscode-dark pre {
+	background-color: rgba(10, 10, 10, 0.4);
+}
+
+.vscode-high-contrast pre {
+	background-color: rgb(0, 0, 0);
+}
+
+.vscode-high-contrast h1 {
+	border-color: rgb(0, 0, 0);
+}
+
+.vscode-light table > thead > tr > th {
+	border-color: rgba(0, 0, 0, 0.69);
+}
+
+.vscode-dark table > thead > tr > th {
+	border-color: rgba(255, 255, 255, 0.69);
+}
+
+.vscode-light h1,
+.vscode-light hr,
+.vscode-light table > tbody > tr + tr > td {
+	border-color: rgba(0, 0, 0, 0.18);
+}
+
+.vscode-dark h1,
+.vscode-dark hr,
+.vscode-dark table > tbody > tr + tr > td {
+	border-color: rgba(255, 255, 255, 0.18);
+}
+
+</style>
+
+<style>
+/* Tomorrow Theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+/* Tomorrow Comment */
+.hljs-comment,
+.hljs-quote {
+	color: #8e908c;
+}
+
+/* Tomorrow Red */
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-regexp,
+.hljs-deletion {
+	color: #c82829;
+}
+
+/* Tomorrow Orange */
+.hljs-number,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-params,
+.hljs-meta,
+.hljs-link {
+	color: #f5871f;
+}
+
+/* Tomorrow Yellow */
+.hljs-attribute {
+	color: #eab700;
+}
+
+/* Tomorrow Green */
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+	color: #718c00;
+}
+
+/* Tomorrow Blue */
+.hljs-title,
+.hljs-section {
+	color: #4271ae;
+}
+
+/* Tomorrow Purple */
+.hljs-keyword,
+.hljs-selector-tag {
+	color: #8959a8;
+}
+
+.hljs {
+	display: block;
+	overflow-x: auto;
+	color: #4d4d4c;
+	padding: 0.5em;
+}
+
+.hljs-emphasis {
+	font-style: italic;
+}
+
+.hljs-strong {
+	font-weight: bold;
+}
+</style>
+
+<style>
+/*
+ * Markdown PDF CSS
+ */
+
+ body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif, "Meiryo";
+	padding: 0 12px;
+}
+
+pre {
+	background-color: #f8f8f8;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	overflow-x: auto;
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+}
+
+pre:not(.hljs) {
+	padding: 23px;
+	line-height: 19px;
+}
+
+blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.emoji {
+	height: 1.4em;
+}
+
+code {
+	font-size: 14px;
+	line-height: 19px;
+}
+
+/* for inline code */
+:not(pre):not(.hljs) > code {
+	color: #C9AE75; /* Change the old color so it seems less like an error */
+	font-size: inherit;
+}
+
+/* Page Break : use <div class="page"/> to insert page break
+-------------------------------------------------------- */
+.page {
+	page-break-after: always;
+}
+
+</style>
+
+<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+</head>
+<body>
+  <script>
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: document.body.classList.contains('vscode-dark') || document.body.classList.contains('vscode-high-contrast')
+          ? 'dark'
+          : 'default'
+    });
+  </script>
+<h3 id="debugging">Debugging</h3>
+<ol>
+<li>Using Debuger<br>
+A. make sure you have c# dev kit installed</li>
+</ol>
+<p><code>Press F5</code></p>
+<ol>
+<li>
+<p>There will be three options</p>
+<ul>
+<li>Start New Instance - This starts your project with a debugger attached.</li>
+<li>Start without Debugging - This runs your project without a debugger attached.</li>
+<li>Step into New Instance - This starts your project with a debugger attached but stops at the entrypoint of your code.</li>
+<li></li>
+</ul>
+</li>
+<li>
+<p>More <a href="https://code.visualstudio.com/docs/csharp/debugging">Docs</a></p>
+</li>
+<li>
+<p>String Interpolation</p>
+<pre class="hljs"><code><div><span class="hljs-keyword">string</span>? Name = <span class="hljs-string">"Jake"</span>
+Console.WriteLine(<span class="hljs-string">$"Hello <span class="hljs-subst">{name}</span>!"</span>);
+</div></code></pre>
+<ol>
+<li>string? is the type of variable we are creating</li>
+<li>$ is the way we tell a string to interpolate the string variable into the string</li>
+<li>This code will give the result of <code>Hello Jake!</code></li>
+</ol>
+</li>
+<li>
+<p>Terminal Inputs and Ouputs</p>
+<ol>
+<li>This how we take a user input</li>
+</ol>
+<pre class="hljs"><code><div><span class="hljs-keyword">string</span>? name = Console.ReadLine();
+</div></code></pre>
+<ol start="2">
+<li>Full Program<sup>1</sup></li>
+</ol>
+<pre class="hljs"><code><div>      <span class="hljs-comment">// See https://aka.ms/new-console-template for more information</span>
+  <span class="hljs-keyword">string</span> UserGreeting = <span class="hljs-string">"Hello Enter Your name:"</span>;
+
+  Console.WriteLine(UserGreeting);
+
+  <span class="hljs-keyword">string</span>? name = Console.ReadLine();
+
+  Console.WriteLine(<span class="hljs-string">$"Hello <span class="hljs-subst">{name}</span>!"</span>);
+  ```
+</div></code></pre>
+</li>
+<li>
+<p>Types</p>
+<ol>
+<li>
+<p>Value Types</p>
+</li>
+<li>
+<p>Reference Types - all are nullable<br>
+a. <a href="https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types">Integral Numeric Types</a></p>
+<table>
+<thead>
+<tr>
+<th>C# Type/Keyword</th>
+<th>Range</th>
+<th>Size</th>
+<th>.NET Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>sbyte</td>
+<td>-128 to 127</td>
+<td>Signed 8-bit integer</td>
+<td>System.SByte</td>
+</tr>
+<tr>
+<td>byte</td>
+<td>0 to 255</td>
+<td>Unsigned 8-bit integer</td>
+<td>System.Byte</td>
+</tr>
+<tr>
+<td>short</td>
+<td>-32,768 to 32,767</td>
+<td>Signed 16-bit integer</td>
+<td>System.Int16</td>
+</tr>
+<tr>
+<td>ushort</td>
+<td>0 to 65,535</td>
+<td>Unsigned 16-bit integer</td>
+<td>System.UInt16</td>
+</tr>
+<tr>
+<td>int</td>
+<td>-2,147,483,648 to 2,147,483,647</td>
+<td>Signed 32-bit integer</td>
+<td>System.Int32</td>
+</tr>
+<tr>
+<td>uint</td>
+<td>0 to 4,294,967,295</td>
+<td>Unsigned 32-bit integer</td>
+<td>System.UInt32</td>
+</tr>
+<tr>
+<td>long</td>
+<td>-9,223,372,036,854,775,808 to 9,223,372,036,854,775,807</td>
+<td>Signed 64-bit integer</td>
+<td>System.Int64</td>
+</tr>
+<tr>
+<td>ulong</td>
+<td>0 to 18,446,744,073,709,551,615</td>
+<td>Unsigned 64-bit integer</td>
+<td>System.UInt64</td>
+</tr>
+<tr>
+<td>nint</td>
+<td>Depends on platform (computed at runtime)</td>
+<td>Signed 32-bit or 64-bit integer</td>
+<td>System.IntPtr</td>
+</tr>
+<tr>
+<td>nuint</td>
+<td>Depends on platform (computed at runtime)</td>
+<td>Unsigned 32-bit or 64-bit integer</td>
+<td>System.UIntPtr</td>
+</tr>
+</tbody>
+</table>
+<p>b. <a href="https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/floating-point-numeric-types">Floating Point numbers  </a></p>
+<table>
+<thead>
+<tr>
+<th>C# Type/Keyword</th>
+<th>Approximate Range</th>
+<th>Precision</th>
+<th>Size</th>
+<th>.NET Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>float</td>
+<td>±1.5 x 10^−45 to ±3.4 x 10^38</td>
+<td>~6-9 digits</td>
+<td>4 bytes</td>
+<td>System.Single</td>
+</tr>
+<tr>
+<td>double</td>
+<td>±5.0 × 10^−324 to ±1.7 × 10^308</td>
+<td>~15-17 digits</td>
+<td>8 bytes</td>
+<td>System.Double</td>
+</tr>
+<tr>
+<td>decimal</td>
+<td>±1.0 x 10^-28 to ±7.9228 x 10^28</td>
+<td>28-29 digits</td>
+<td>16 bytes</td>
+<td>System.Decimal</td>
+</tr>
+</tbody>
+</table>
+<p>c. <a href="https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/bool">bool</a></p>
+<table>
+<thead>
+<tr>
+<th>C# Type/Keyword</th>
+<th>Values</th>
+<th>Description</th>
+<th>.NET Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>bool</td>
+<td>true, false</td>
+<td>Boolean value (true or false)</td>
+<td>System.Boolean</td>
+</tr>
+</tbody>
+</table>
+<p>d. <a href="https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/char">char</a></p>
+<table>
+<thead>
+<tr>
+<th>C# Type/Keyword</th>
+<th>Range</th>
+<th>Description</th>
+<th>Size</th>
+<th>.NET Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>char</td>
+<td>U+0000 to U+FFFF</td>
+<td>Unicode 16-bit character</td>
+<td>16-bit (2 bytes)</td>
+<td>System.Char</td>
+</tr>
+</tbody>
+</table>
+<p>e. make any of these types nullable by defining with a question mark like so <code>char? , float?, int? bool?</code>
+f. Program Example</p>
+<pre class="hljs"><code><div><span class="hljs-comment">// See https://aka.ms/new-console-template for more information</span>
+
+<span class="hljs-comment">//ints</span>
+
+<span class="hljs-keyword">int</span> a = <span class="hljs-number">0</span>;
+<span class="hljs-keyword">int</span> b = <span class="hljs-number">2</span>;
+<span class="hljs-keyword">int</span> c = <span class="hljs-number">-1</span>;
+
+<span class="hljs-comment">// basic math with ints</span>
+
+<span class="hljs-keyword">int</span> <span class="hljs-keyword">add</span> = b + a;
+Console.WriteLine(<span class="hljs-string">$"result of a + b = <span class="hljs-subst">{<span class="hljs-keyword">add</span>}</span>"</span>);
+<span class="hljs-keyword">int</span> sub =  c - b ;
+Console.WriteLine(<span class="hljs-string">$"result of c-b = <span class="hljs-subst">{sub}</span>"</span>);
+<span class="hljs-keyword">int</span> multi = a * b;
+Console.WriteLine(<span class="hljs-string">$"result of a * b = <span class="hljs-subst">{multi}</span>"</span>);
+<span class="hljs-keyword">int</span> divide = b / c;
+Console.WriteLine(<span class="hljs-string">$"result of b/c = <span class="hljs-subst">{divide}</span>"</span>);
+
+
+<span class="hljs-comment">// floats</span>
+
+<span class="hljs-keyword">float</span> f = <span class="hljs-number">3.5f</span>;
+Console.WriteLine(<span class="hljs-string">$"f = <span class="hljs-subst">{f}</span>"</span>);
+<span class="hljs-keyword">double</span> g = <span class="hljs-number">7.8</span>d;
+Console.WriteLine(<span class="hljs-string">$"g = <span class="hljs-subst">{g}</span>"</span>);
+<span class="hljs-keyword">decimal</span> dec = <span class="hljs-number">7.15</span>m;
+Console.WriteLine(<span class="hljs-string">$"dec = <span class="hljs-subst">{dec}</span>"</span>);
+
+<span class="hljs-comment">// float maths &amp; precisions when decimals points matters</span>
+
+Console.WriteLine(<span class="hljs-string">$"float precision is seven digits: <span class="hljs-subst">{<span class="hljs-number">1.2345678f</span>/<span class="hljs-number">0.98765432f</span>}</span>"</span>);
+Console.WriteLine(<span class="hljs-string">$"float precision is seven digits: <span class="hljs-subst">{<span class="hljs-number">1.2345678</span>d/<span class="hljs-number">0.98765432</span>d}</span>"</span>);
+Console.WriteLine(<span class="hljs-string">$"float precision is seven digits: <span class="hljs-subst">{<span class="hljs-number">1.2345678</span>m/<span class="hljs-number">0.98765432</span>m}</span>"</span>);
+
+<span class="hljs-comment">// characters</span>
+<span class="hljs-keyword">char</span> c1 = <span class="hljs-string">'a'</span>;
+Console.WriteLine(<span class="hljs-string">$"char: <span class="hljs-subst">{c1}</span>"</span>);
+
+<span class="hljs-comment">// create a bool &amp; set bools</span>
+
+<span class="hljs-keyword">bool</span> enabled = <span class="hljs-literal">false</span>;
+Console.WriteLine(<span class="hljs-string">$"bool: <span class="hljs-subst">{enabled}</span>"</span>);
+
+enabled = <span class="hljs-literal">true</span>;
+Console.WriteLine(<span class="hljs-string">$"bool: <span class="hljs-subst">{enabled}</span>"</span>);
+
+<span class="hljs-comment">// null value types ?  allows us to make value nullable</span>
+<span class="hljs-comment">// all types in this program are nullable</span>
+
+<span class="hljs-keyword">int</span>? i1 = <span class="hljs-literal">null</span>;
+<span class="hljs-keyword">bool</span>? b1 = <span class="hljs-literal">null</span>;
+</div></code></pre>
+</li>
+<li>
+<p>Type conversion</p>
+<ol>
+<li>Implicit Conversion - no special snytax</li>
+<li>Explicit Conversion - casting, can lead to precision or data loss</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+<h3 id="additional-notes">Additional Notes</h3>
+<hr>
+<p><sup>1</sup> Refer to Lesson One for making a new directory and creating a new console program.</p>
+<h3 id="extra-credit">Extra Credit</h3>
+<p>Follow This video to pimp out your command line</p>
+<p>https://youtu.be/-G6GbXGo4wo</p>
+
+</body>
+</html>
