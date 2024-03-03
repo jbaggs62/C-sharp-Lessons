@@ -2,9 +2,9 @@
 
 //ints
 
-int a = 0;
-int b = 2;
-int c = -1;
+byte a = 0;
+byte b = 2;
+sbyte c = -1;
 
 // basic math with ints
 
@@ -30,12 +30,14 @@ Console.WriteLine($"dec = {dec}");
 // float maths & precisions when decimals points matters
 
 Console.WriteLine($"float precision is seven digits: {1.2345678f/0.98765432f}");
-Console.WriteLine($"float precision is seven digits: {1.2345678d/0.98765432d}");
-Console.WriteLine($"float precision is seven digits: {1.2345678m/0.98765432m}");
+Console.WriteLine($"float precision is 16 digits: {1.2345678d/0.98765432d}");
+Console.WriteLine($"float precision is 28 digits: {1.2345678m/0.98765432m}");
 
 // characters
 char c1 = 'a';
+char c2 = 'w';
 Console.WriteLine($"char: {c1}");
+Console.WriteLine($"char: {c2}");
 
 // create a bool & set bools
 
@@ -50,5 +52,3 @@ Console.WriteLine($"bool: {enabled}");
 
 int? i1 = null;
 bool? b1 = null;
-
-
